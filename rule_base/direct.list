@@ -5,10 +5,13 @@ DOMAIN-SUFFIX,cm.steampowered.com
 DOMAIN-SUFFIX,githubusercontent.com
 USER-AGENT,WeChatShareExtensionNew*
 DOMAIN,1.1.1.3
+
 # 基本规则
 AND,((PROTOCOL,UDP), (DEST-PORT,443)),REJECT-NO-DROP
+
 # Client
 PROCESS-NAME,UUBooster
+
 # > Proxy
 PROCESS-NAME,v2ray
 PROCESS-NAME,xray
@@ -19,6 +22,7 @@ PROCESS-NAME,ss-local
 PROCESS-NAME,privoxy
 PROCESS-NAME,leaf
 PROCESS-NAME,UUBooster
+
 # > Download for Surge Mac
 PROCESS-NAME,aria2c
 PROCESS-NAME,fdm
@@ -29,6 +33,7 @@ PROCESS-NAME,Transmission
 PROCESS-NAME,uTorrent
 PROCESS-NAME,WebTorrent
 PROCESS-NAME,WebTorrent Helper
+
 # BT
 DOMAIN-SUFFIX,smtp
 DOMAIN-KEYWORD,aria2
@@ -39,12 +44,15 @@ URL-REGEX,(Subject|HELO|SMTP)
 URL-REGEX,(api|ps|sv|offnavi|newvector|ulog.imap|newloc)(.map|).(baidu|n.shifen).com
 URL-REGEX,(.+.|^)(360|so|qihoo|360safe|qhimg|360totalsecurity|yunpan).(cn|com)
 URL-REGEX,(.+.)?(torrent|announce.php?passkey=|tracker|BitTorrent|bt_key|ed2k|find_node|get_peers|info_hash|magnet:|peer_id=|xunlei)(..+)?
+
 # 迅雷
 URL-REGEX,(.?)(xunlei|sandai|Thunder|XLLiveUD)(.)
 DOMAIN-SUFFIX,xunlei.com
 PROCESS-NAME,DownloadService
+
 # Tencent 微云
 PROCESS-NAME,Weiyun
+
 # BaiduYun 百度网盘
 PROCESS-NAME,baidunetdisk
 URL-REGEX,(api|ps|sv|offnavi|newvector|ulog\.imap|newloc)(\.map|)\.(baidu|n\.shifen)\.com
