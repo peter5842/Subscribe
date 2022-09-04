@@ -4,7 +4,7 @@ DOMAIN-SUFFIX,storage.live.com
 DOMAIN-SUFFIX,cm.steampowered.com
 DOMAIN-SUFFIX,githubusercontent.com
 USER-AGENT,WeChatShareExtensionNew*
-DOMAIN,1.1.1.3
+IP-CIDR,1.1.1.0/24
 
 # 基本规则
 AND,((PROTOCOL,UDP), (DEST-PORT,443)),REJECT-NO-DROP
