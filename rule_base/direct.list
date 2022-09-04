@@ -2,6 +2,7 @@
 DOMAIN-SUFFIX,sysu.edu.cn // 中山大学校园网
 DOMAIN-SUFFIX,storage.live.com // OneDriveDownload
 DOMAIN-SUFFIX,cm.steampowered.com // steam下载设置
+DOMAIN-SUFFIX,githubusercontent.com // githubusercontent设置
 USER-AGENT,WeChatShareExtensionNew* // 微信分享
 DOMAIN,1.1.1.3 // 超算内网
 # 基本规则
