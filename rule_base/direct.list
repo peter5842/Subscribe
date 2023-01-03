@@ -1,4 +1,4 @@
 # 用户自定义
 # USER-AGENT,WeChatShareExtensionNew*
 IP-CIDR,1.1.1.0/24
-DOMAIN,raw.githubusercontent.com
+# DOMAIN,raw.githubusercontent.com
