@@ -2,3 +2,4 @@
 # USER-AGENT,WeChatShareExtensionNew*
 IP-CIDR,1.1.1.0/24
 # DOMAIN,raw.githubusercontent.com
+DOMAIN,data.bilibili.com
