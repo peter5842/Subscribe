@@ -3,6 +3,8 @@ DOMAIN-SUFFIX,ddnspod.com
 DOMAIN-SUFFIX,dyndns.com
 DOMAIN-SUFFIX,ip.sb
 DOMAIN-SUFFIX,myip.la
+# OPENAI
+DOMAIN-SUFFIX,xty.app
 # DOMAIN-SUFFIX,liudeqin.com
 DOMAIN-SUFFIX,cn.bing.com
 DOMAIN,home.liudeqin.com
