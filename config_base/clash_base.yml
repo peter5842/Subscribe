@@ -67,6 +67,7 @@ dns:
      - 'localhost'
      - 'passenger.t3go.cn'
      - 'checkip.dyndns.com'
+     - ‘*.sysu.edu.cn'
   default-nameserver:
     - 223.5.5.5
     - 119.29.29.29
