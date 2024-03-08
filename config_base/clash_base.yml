@@ -160,9 +160,6 @@ cfw-bypass-bak:
   - <local>
 # 系统代理跳过列表 起作用的
 cfw-bypass:
-  # 直连列表
-  - '*.sysu.edu.cn'
-  - '*.wkinfo.com.cn'
   # MyList
   - "*.13th.tech"
   - "*.423down.com"
