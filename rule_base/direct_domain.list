@@ -9,5 +9,4 @@ DOMAIN-SUFFIX,myip.la
 DOMAIN-SUFFIX,xty.app
 # DOMAIN-SUFFIX,liudeqin.com
 DOMAIN-SUFFIX,cn.bing.com
-DOMAIN,home.liudeqin.com
-DOMAIN,chat.liudeqin.com
+DOMAIN-SUFFIX,liudeqin.com
