@@ -51,6 +51,15 @@ http:
     - ^http://g\.cn http://www.google.com header # 重写请求头的域名
     - ^https?://www\.google\.cn https://www.google.com 302 # 直接返回一个 302 重定向的响应
  
+proxies:
+  - name: "家"
+    type: ss
+    server: home.liudeqin.com
+    port: 20216
+    cipher: xchacha20-ietf-poly1305
+    password: "MaFQ8ELKsuhzUm5ILhTu2tCPXFLL8qoylT30vAlzIE4="
+    udp: true
+
 dns:
   enable: true # 是否启用dns false
   ipv6: true
