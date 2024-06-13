@@ -40,7 +40,6 @@ tv.home = 192.168.3.3
 
 [Ponte]
 server-proxy-name = 家
-client-proxy-name = 家
 
 [URL Rewrite]
 ^https?://(www.)?g.cn https://www.google.com 302
