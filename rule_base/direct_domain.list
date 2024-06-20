@@ -7,9 +7,8 @@ DOMAIN-SUFFIX,ip-api.com
 DOMAIN-SUFFIX,myip.la
 # OPENAI
 DOMAIN-SUFFIX,xty.app
-# DOMAIN-SUFFIX,liudeqin.com
 DOMAIN-SUFFIX,cn.bing.com
-DOMAIN-SUFFIX,liudeqin.com
+#DOMAIN-SUFFIX,liudeqin.com
 # Download
 PROCESS-NAME,aria2c
 PROCESS-NAME,fdm
