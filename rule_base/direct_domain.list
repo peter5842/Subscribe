@@ -16,6 +16,7 @@ PROCESS-NAME,Folx
 PROCESS-NAME,NetTransport
 PROCESS-NAME,Thunder
 PROCESS-NAME,Transmission
+PROCESS-NAME,transmission-daemon
 PROCESS-NAME,uTorrent
 PROCESS-NAME,WebTorrent
 PROCESS-NAME,WebTorrent Helper
