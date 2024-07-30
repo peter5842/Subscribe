@@ -26,17 +26,16 @@ external-controller-access = 5842@0.0.0.0:6170
 include-all-networks = false
 include-local-networks = false
 use-local-host-item-for-proxy = false
-vif-mode = v3
+vif-mode = auto
 http-api-tls = false
 http-api = peter5842@127.0.0.1:6166
-dns-server = 119.29.29.29, 223.5.5.5, 2402:4e00::, 2400:3200::1, 1.1.1.1, 8.8.8.8, 2001:4860:4860::8888, 2606:4700:4700::1111
+dns-server = 119.29.29.29, 223.5.5.5, 2402:4e00::, 2400:3200::1
 geoip-maxmind-url = https://raw.githubusercontent.com/Loyalsoldier/geoip/release/Country.mmdb
 
 [Host]
-*.sysu.edu.cn = server:syslib // 校园网
-router.home = 192.168.3.1
-nas.home = 192.168.3.2
-tv.home = 192.168.3.3
+router.1510.com = 192.168.3.1
+nas.1510.com = 192.168.3.2
+tv.1510.com = 192.168.3.3
 
 [Ponte]
 server-proxy-name = 家
@@ -44,6 +43,9 @@ server-proxy-name = 家
 [URL Rewrite]
 ^https?://(www.)?g.cn https://www.google.com 302
 ^https?://(www.)?google.cn https://www.google.com 302
+
+[SSID Setting]
+SSID:1510 suspend=true
 
 [MITM]
 skip-server-cert-verify = true
