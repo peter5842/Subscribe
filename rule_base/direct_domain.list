@@ -28,3 +28,5 @@ PROCESS-NAME,qbittorrent-nox
 DOMAIN-SUFFIX,carpt.net
 DOMAIN-SUFFIX,hdfans.org
 DOMAIN-SUFFIX,rousi.zip
+# 考试
+DOMAIN-SUFFIX,kaoshixing.com
