@@ -1,5 +1,6 @@
 # 自用可直连
 DOMAIN-SUFFIX,xn--czry03m.com
+DOMAIN-SUFFIX,yuisuki.com
 # 测试ip直连
 DOMAIN-SUFFIX,ddnspod.com
 DOMAIN-SUFFIX,dyndns.com
@@ -10,7 +11,6 @@ DOMAIN-SUFFIX,myip.la
 # OPENAI
 DOMAIN-SUFFIX,xty.app
 DOMAIN-SUFFIX,cn.bing.com
-#DOMAIN-SUFFIX,liudeqin.com
 # Download
 PROCESS-NAME,aria2c
 PROCESS-NAME,fdm
