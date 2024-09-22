@@ -14,18 +14,18 @@ DOMAIN-SUFFIX,myip.la
 DOMAIN-SUFFIX,xty.app
 DOMAIN-SUFFIX,cn.bing.com
 # Download
-PROCESS-NAME,aria2c
-PROCESS-NAME,fdm
-PROCESS-NAME,Folx
-PROCESS-NAME,NetTransport
-PROCESS-NAME,Thunder
-PROCESS-NAME,Transmission
-PROCESS-NAME,transmission-daemon
-PROCESS-NAME,uTorrent
-PROCESS-NAME,WebTorrent
-PROCESS-NAME,WebTorrent Helper
-PROCESS-NAME,qbittorrent
-PROCESS-NAME,qbittorrent-nox
+# PROCESS-NAME,aria2c
+# PROCESS-NAME,fdm
+# PROCESS-NAME,Folx
+# PROCESS-NAME,NetTransport
+# PROCESS-NAME,Thunder
+# PROCESS-NAME,Transmission
+# PROCESS-NAME,transmission-daemon
+# PROCESS-NAME,uTorrent
+# PROCESS-NAME,WebTorrent
+# PROCESS-NAME,WebTorrent Helper
+# PROCESS-NAME,qbittorrent
+# PROCESS-NAME,qbittorrent-nox
 # PT站
 DOMAIN-SUFFIX,carpt.net
 DOMAIN-SUFFIX,hdfans.org
