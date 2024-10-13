@@ -26,9 +26,5 @@ DOMAIN-SUFFIX,cn.bing.com
 # PROCESS-NAME,WebTorrent Helper
 # PROCESS-NAME,qbittorrent
 # PROCESS-NAME,qbittorrent-nox
-# PT站
-DOMAIN-SUFFIX,carpt.net
-DOMAIN-SUFFIX,hdfans.org
-DOMAIN-SUFFIX,rousi.zip
 # 考试
 DOMAIN-SUFFIX,kaoshixing.com
