@@ -118,7 +118,7 @@ tun:
 # Clash for Windows
 # Proxies module latency test settings
 cfw-latency-timeout: 3000
-cfw-latency-url: http://www.apple.com/library/test/success.html
+cfw-latency-url: http://cp.cloudflare.com
 
 # 打断连接
 # Identify strategy of breaking connections after switching to a new proxy/profile/mode
