@@ -30,7 +30,6 @@ vif-mode = auto
 http-api-tls = false
 http-api = peter5842@127.0.0.1:6166
 geoip-maxmind-url = https://raw.githubusercontent.com/Loyalsoldier/geoip/release/Country.mmdb
-dns-server = 119.29.29.29, 119.28.28.28, 223.5.5.5, 223.6.6.6, 2402:4e00::, 2400:3200::1
 encrypted-dns-server = https://doh.pub/dns-query,quic://dns.alidns.com
 
 [Ponte]
