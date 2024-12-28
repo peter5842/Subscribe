@@ -1,0 +1,30 @@
+# 自用可直连
+DOMAIN-SUFFIX,xn--czry03m.com
+DOMAIN-SUFFIX,yuisuki.com
+# vpn/代理检测
+DOMAIN-SUFFIX,yxvm.com
+# 测试ip直连
+DOMAIN-SUFFIX,ddnspod.com
+DOMAIN-SUFFIX,dyndns.com
+DOMAIN-SUFFIX,ip.sb
+DOMAIN-SUFFIX,ipapi.co
+DOMAIN-SUFFIX,ip-api.com
+DOMAIN-SUFFIX,myip.la
+# OPENAI
+DOMAIN-SUFFIX,xty.app
+DOMAIN-SUFFIX,cn.bing.com
+# Download
+# PROCESS-NAME,aria2c
+# PROCESS-NAME,fdm
+# PROCESS-NAME,Folx
+# PROCESS-NAME,NetTransport
+# PROCESS-NAME,Thunder
+# PROCESS-NAME,Transmission
+# PROCESS-NAME,transmission-daemon
+# PROCESS-NAME,uTorrent
+# PROCESS-NAME,WebTorrent
+# PROCESS-NAME,WebTorrent Helper
+# PROCESS-NAME,qbittorrent
+# PROCESS-NAME,qbittorrent-nox
+# 考试
+DOMAIN-SUFFIX,kaoshixing.com

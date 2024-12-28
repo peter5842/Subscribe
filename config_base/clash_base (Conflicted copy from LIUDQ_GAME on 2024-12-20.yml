@@ -22,7 +22,7 @@ allow-lan: true
 # #192.168.122.11: 绑定单个IPv4地址
 # #"[aaaa::a8aa:ff:fe09:57d8]": 绑定单个IPv6地址
 bind-address: "*"
-ipv6: true
+ipv6: false
 
 # 规则模式：rule（规则） / global（全局代理）/ direct（全局直连）/ script (脚本)
 mode: rule
@@ -51,10 +51,74 @@ http:
     - ^http://g\.cn http://www.google.com header # 重写请求头的域名
     - ^https?://www\.google\.cn https://www.google.com 302 # 直接返回一个 302 重定向的响应
 
+dns:
+  enable: true # 是否启用dns false
+  ipv6: true
+  listen: 0.0.0.0:53
+  fake-ip-range: 198.18.0.1/16 #
+  fake-ip-filter: # fake ip 白名单列表，如果你不知道这个参数的作用，请勿修改
+     - '*.lan'
+     - '*.local'
+     - '127.0.0.1'
+     - '192.168.0.0/16'
+     - '10.0.0.0/8'
+     - '172.16.0.0/12'
+     - '100.64.0.0/10'
+     - 'localhost'
+     - 'passenger.t3go.cn'
+     - 'checkip.dyndns.com'
+  default-nameserver:
+    - 223.5.5.5
+    - 119.29.29.29
+    - 8.8.8.8
+    - 1.1.1.1
+  nameserver:
+    - https://doh.pub/dns-query
+    - https://dns.alidns.com/dns-query
+    - https://dns.google/dns-query
+    - https://cloudflare-dns.com/dns-query
+  fallback-filter:
+    geoip: true
+    geoip-code: CN
+    ipcidr:
+      - 0.0.0.0/8
+      - 10.0.0.0/8
+      - 100.64.0.0/10
+      - 127.0.0.0/8
+      - 169.254.0.0/16
+      - 172.16.0.0/12
+      - 192.0.0.0/24
+      - 192.0.2.0/24
+      - 192.88.99.0/24
+      - 192.168.0.0/16
+      - 198.18.0.0/15
+      - 198.51.100.0/24
+      - 203.0.113.0/24
+      - 224.0.0.0/4
+      - 240.0.0.0/4
+      - 255.255.255.255/32
+    domain:
+      - "+.google.com"
+      - "+.facebook.com"
+      - "+.youtube.com"
+      - "+.githubusercontent.com"
+      - "+.googlevideo.com"
+      - "+.msftconnecttest.com"
+      - "+.msftncsi.com"
+      - msftconnecttest.com
+      - msftncsi.com
+tun:
+  enable: false
+  stack: system
+  auto-route: true
+  auto-detect-interface: true
+  dns-hijack:
+    - any:53
+
 # Clash for Windows
 # Proxies module latency test settings
 cfw-latency-timeout: 3000
-cfw-latency-url: http://cp.cloudflare.com
+cfw-latency-url: http://www.apple.com/library/test/success.html
 
 # 打断连接
 # Identify strategy of breaking connections after switching to a new proxy/profile/mode
