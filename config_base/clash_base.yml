@@ -83,16 +83,6 @@ sniffer:
       ports: [80, 8080-8880]
       override-destination: true
 
-# tun 模式
-tun:
-  enable: false  # enable 'true'
-  stack: system  # or 'gvisor'
-  dns-hijack:
-    - "any:53"
-    - "tcp://any:53"
-  auto-route: true
-  auto-detect-interface: true
-
 dns:
   enable: true
   listen: :1053
