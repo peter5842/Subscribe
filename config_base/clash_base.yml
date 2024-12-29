@@ -56,6 +56,9 @@ geox-url:
 # https://github.com/vernesong/OpenClash/issues/2614
 keep-alive-interval: 1800
 
+# 全局客户端指纹
+global-client-fingerprint: random # 随机指纹
+
 # 缓存
 profile:
   store-selected: true
@@ -79,6 +82,16 @@ sniffer:
     HTTP:
       ports: [80, 8080-8880]
       override-destination: true
+
+# tun 模式
+tun:
+  enable: false  # enable 'true'
+  stack: system  # or 'gvisor'
+  dns-hijack:
+    - "any:53"
+    - "tcp://any:53"
+  auto-route: true
+  auto-detect-interface: true
 
 dns:
   enable: true
