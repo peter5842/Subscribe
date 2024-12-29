@@ -52,14 +52,6 @@ geox-url:
   geosite: "https://ghp.ci/https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geosite.dat"
   mmdb: "https://ghp.ci/https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/country.mmdb"
 
-# 进程匹配模式
-# 路由器上请设置为 off
-# always 开启，强制匹配所有进程
-# strict 默认，由 Clash 判断是否开启
-# off 不匹配进程，推荐在路由器上使用此模式
-find-process-mode: off
-
-
 # 缓解移动设备耗电问题
 # https://github.com/vernesong/OpenClash/issues/2614
 keep-alive-interval: 1800
