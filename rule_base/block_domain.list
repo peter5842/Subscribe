@@ -1,2 +1,4 @@
 DOMAIN,www.google.cn
-DOMAIN-SUFFIX,prod.cloud.netflix.com
+DOMAIN-SUFFIX,ios.ngp.prod.cloud.netflix.com
+DOMAIN-SUFFIX,ios.prod.cloud.netflix.com
+DOMAIN-SUFFIX,appboot.netflix.com
