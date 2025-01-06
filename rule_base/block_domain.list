@@ -2,5 +2,3 @@ DOMAIN,www.google.cn
 DOMAIN-SUFFIX,ios.ngp.prod.cloud.netflix.com
 DOMAIN-SUFFIX,ios.prod.cloud.netflix.com
 DOMAIN-SUFFIX,appboot.netflix.com
-IP-CIDR,8.8.8.8/32
-IP-CIDR,8.8.4.4/32
