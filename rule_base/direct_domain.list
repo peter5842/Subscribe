@@ -35,6 +35,8 @@ DOMAIN-SUFFIX,openxlab.org.cn
 IP-CIDR,47.242.9.24/32
 #coalcloud-iplc-v4
 IP-CIDR,23.174.104.48/32
+#coalcloud-uk
+IP-CIDR,206.245.238.12/32
 #dmit-us-eb
 IP-CIDR,154.17.225.126/32
 #dmit-us-pro
