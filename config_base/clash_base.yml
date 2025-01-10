@@ -1,127 +1,77 @@
-#---------------------------------------------------#
-# 配置文件需要放置在 $HOME/.config/clash/config.yml
-# 或者运行目录下的config.yml
-#---------------------------------------------------#
-
-# HTTP 代理端口
-# port: 7890
-
-# SOCKS5 代理端口
-# socks-port: 7891
-
-# Linux 和 macOS 的 redir 代理端口 (如需使用此功能，请取消注释)
-# redir-port: 7892
-
-# 仅在将allow-lan设置为true时适用
-# #"*": 绑定所有IP地址
-# #192.168.122.11: 绑定单个IPv4地址
-# #"[aaaa::a8aa:ff:fe09:57d8]": 绑定单个IPv6地址
-bind-address: "*"
-
-# 规则模式：rule（规则） / global（全局代理）/ direct（全局直连）/ script (脚本)
-mode: rule
-
-# RESTful API 的口令 (可选)
-secret: "5842"
-
-# ipv6 支持
-ipv6: true
-log-level: info
-# 允许局域网连接
-allow-lan: true
-# socks5/http 端口
 mixed-port: 7890
-# Meta 内核特性 https://wiki.metacubex.one/config/general
-# 统一延迟
-# 更换延迟计算方式,去除握手等额外延迟
+port: 7891
+socks-port: 7892
+redir-port: 7893
+tproxy-port: 7894
+
 unified-delay: true
-# TCP 并发
-# 同时对所有ip进行连接，返回延迟最低的地址
+geodata-mode: false
+geodata-loader: standard
+geo-auto-update: true
+geo-update-interval: 24
 tcp-concurrent: true
-# 外部控制端口
-external-controller: :9090
+find-process-mode: strict
+global-client-fingerprint: chrome
 
-geodata-mode: true
+allow-lan: true
+mode: rule
+log-level: info
+ipv6: true
+udp: true
 
-# Geo 数据库下载地址
-# 使用 FastGit 代理 (https://fgit.cf)
-# 源地址 https://github.com/MetaCubeX/meta-rules-dat
-# 可以更换镜像站但不要更换其他数据库，可能导致无法启动
+external-controller: 0.0.0.0:9090
+# external-ui: ui
+# external-ui-url: 'https://github.com/MetaCubeX/metacubexd/archive/refs/heads/gh-pages.zip'
+
 geox-url:
-  geoip: "https://ghproxy.ishangtao.com/github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geoip.dat"
-  geosite: "https://ghproxy.ishangtao.com/github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geosite.dat"
-  mmdb: "https://ghproxy.ishangtao.com/github.com/MetaCubeX/meta-rules-dat/releases/download/latest/country.mmdb"
+  # geoip: 'https://raw.githubusercontent.com/Loyalsoldier/v2ray-rules-dat/release/geoip.dat'
+  # geosite: 'https://raw.githubusercontent.com/Loyalsoldier/v2ray-rules-dat/release/geosite.dat'
+  mmdb: 'https://gitlab.com/Masaiki/GeoIP2-CN/-/raw/release/Country.mmdb'
+  asn: 'https://gitlab.com/Loon0x00/loon_data/-/raw/main/geo/GeoLite2-ASN.mmdb'
 
-# 缓解移动设备耗电问题
-# https://github.com/vernesong/OpenClash/issues/2614
-keep-alive-interval: 1800
-
-# 全局客户端指纹
-global-client-fingerprint: random # 随机指纹
-
-# 缓存
 profile:
   store-selected: true
   store-fake-ip: true
 
-# 自动同步时间以防止时间不准导致无法正常联网
-ntp:
-  enable: true
-  # 是否同步至系统时间，需要 root/管理员权限
-  write-to-system: false
-  server: time.apple.com
-  port: 123
-  interval: 30
-
-# 域名嗅探
 sniffer:
   enable: true
+  force-dns-mapping: true
+  parse-pure-ip: true
+  override-destination: true
   sniff:
-    TLS:
-      ports: [443, 8443]
     HTTP:
       ports: [80, 8080-8880]
       override-destination: true
+    TLS:
+      ports: [443, 8443]
+    QUIC:
+      ports: [443, 8443]
+  # force-domain:
+  #   - +.v2ex.com
+
+  # skip-domain:
+  #   - Mijia Cloud
+
+tun:
+  enable: true
+  stack: system
+  dns-hijack:
+    - any:53
+  auto-route: true
+  auto-detect-interface: true
 
 dns:
   enable: true
-  listen: :1053
+  listen: 0.0.0.0:1053
   ipv6: true
-  # 路由器个人建议使用 redir-host 以最佳兼容性
-  # 其他设备可以使用 fake-ip
-  enhanced-mode: redir-host
+  enhanced-mode: fake-ip
   fake-ip-range: 28.0.0.1/8
   fake-ip-filter:
-    - '*'
-    - '+.lan'
-    - '+.local'
+    - "*"
+    - +.lan
   default-nameserver:
     - 223.5.5.5
     - 119.29.29.29
-    - 114.114.114.114
-    - '[2402:4e00::]'
-    - '[2400:3200::1]'
   nameserver:
-    - 'tls://8.8.4.4#dns'
-    - 'tls://1.0.0.1#dns'
-    - 'tls://[2001:4860:4860::8844]#dns'
-    - 'tls://[2606:4700:4700::1001]#dns'
-  proxy-server-nameserver:
-    - https://doh.pub/dns-query
-  nameserver-policy:
-    "geosite:cn,private":
-      - https://doh.pub/dns-query
-      - https://dns.alidns.com/dns-query
-    "geosite:!cn,!private": 
-      - "tls://dns.google"
-      - "tls://cloudflare-dns.com"
-
-# HTTP 引擎相关
-http:
-  mitm:
-    - g.cn
-    - '*.google.cn'
-  rewrite:
-    - ^http://g\.cn http://www.google.com header # 重写请求头的域名
-    - ^https?://www\.google\.cn https://www.google.com 302 # 直接返回一个 302 重定向的响应
-
+    - https://223.5.5.5/dns-query#h3=true
+    - https://223.6.6.6/dns-query#h3=true
