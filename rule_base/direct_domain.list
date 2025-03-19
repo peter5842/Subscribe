@@ -30,24 +30,3 @@ DOMAIN-SUFFIX,cn.bing.com
 # 考试
 DOMAIN-SUFFIX,kaoshixing.com
 DOMAIN-SUFFIX,openxlab.org.cn
-# 自用节点
-#clawcloud-hk
-IP-CIDR,47.242.9.24/32
-#coalcloud-uk
-IP-CIDR,206.245.238.12/32
-#dmit-us-eb
-IP-CIDR,154.17.225.126/32
-#dmit-us-pro
-IP-CIDR,154.21.82.155/32
-#akile-jpp
-IP-CIDR,103.232.213.121/32
-#bwg-us
-IP-CIDR,144.34.229.144/32
-#kr
-IP-CIDR,156.234.221.76/32
-#us2
-IP-CIDR,154.29.146.129/32
-#us4
-IP-CIDR,23.165.40.12/32
-#coalcloud-hk-iplc
-IP-CIDR6,
