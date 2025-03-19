@@ -1,9 +1,9 @@
 # 自用可直连
-DOMAIN-SUFFIX,xn--czry03m.com
-DOMAIN-SUFFIX,yuisuki.com
-DOMAIN-SUFFIX,ishangtao.com
+# DOMAIN-SUFFIX,xn--czry03m.com
+# DOMAIN-SUFFIX,yuisuki.com
+# DOMAIN-SUFFIX,ishangtao.com
 # vpn/代理检测
-DOMAIN-SUFFIX,yxvm.com
+# DOMAIN-SUFFIX,yxvm.com
 # 测试ip直连
 DOMAIN-SUFFIX,ddnspod.com
 DOMAIN-SUFFIX,dyndns.com
