@@ -30,7 +30,7 @@ vif-mode = auto
 http-api-tls = false
 http-api = peter5842@127.0.0.1:6166
 geoip-maxmind-url = https://raw.githubusercontent.com/Loyalsoldier/geoip/release/Country.mmdb
-encrypted-dns-server = https://doh.pub/dns-query,quic://dns.alidns.com
+encrypted-dns-server = https://dns.yuisuki.com/dns-query
 
 [Ponte]
 server-proxy-name = 家
